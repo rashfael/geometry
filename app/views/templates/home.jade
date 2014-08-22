@@ -1,0 +1,30 @@
+.row
+	.col-xs-6.col-xs-offset-3.text-center
+		img.img-responsive(style='height: 10em;float:left;margin-top: -1.25em', src='/images/logo.svg')
+		h1(style='height: 2em; font-size: 4em; ') Drone OPS
+		p.lead
+			| [COMMAND]
+			br
+			| > Unit BE4981#2:
+			br
+			| > You are tasked with terraforming 4391.163.43 IV.
+			br
+			| > You are cleared for use of Type I Drones, Mines and Terraformers.
+			br
+			| > OVERSIGHT expects a turnover of 400 hexants in your first cycle.
+			br
+			| [TRANSMISSION END]
+		.btn-group.btn-group-lg
+			button.btn.btn-default.mute
+				span.glyphicon.glyphicon-volume-up
+			button.btn.btn-success 
+				| Instructions
+			button.btn.btn-primary.start 
+				| Start
+		p
+			a(data-toggle="modal", data-target="#legalModal") Legal
+			| &nbsp; | &nbsp;
+			a(href="http://www.creatale.de/") creatale.de
+
+#legalModal.modal.fade(tabindex='-1', role='dialog')
+	include legal
